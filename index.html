@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Using External JavaScript</title>
+  <title>Interactive Buttons and Messages</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Hello, External JavaScript!</h1>
-  <p>This page uses an external JavaScript file.</p>
+  <div class="container">
+    <h1>Welcome to Interactive Buttons</h1>
+    <p>Click the buttons below to explore different messages:</p>
+    <button id="message1" class="btn">Message 1</button>
+    <button id="message2" class="btn">Message 2</button>
+    <button id="message3" class="btn">Message 3</button>
+
+    <div id="messageDisplay" class="message">
+      <!-- Initially empty, will be populated by JavaScript -->
+    </div>
+  </div>
 </body>
-</html>
 </html>
