@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const message1Button = document.getElementById('button1');
+  console.log('loaded')
+    const message1Button = document.getElementById('button1'); 
     const message2Button = document.getElementById('button2');
     const message3Button = document.getElementById('button3');
   
@@ -22,9 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.message').forEach(msg => {
         msg.classList.remove('active');
       });
-  
-      // Display the selected message
-      messageDisplay.textContent = message;
-      messageDisplay.classList.add('active');
     }
   });
