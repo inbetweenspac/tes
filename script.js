@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const message1Button = document.getElementById('button1');
     const message2Button = document.getElementById('button2');
     const message3Button = document.getElementById('button3');
-    const messageDisplay = document.getElementById('messageDisplay');
+    const messageDisplay = document.getElementById('messagesDisplay');
   
     message1Button.addEventListener('click', function() {
       showMessage('Message 1 content goes here');
