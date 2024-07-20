@@ -1,22 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I am going to kill myself if this not work</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+        overflow: hidden;
+    }
+    .container {
+        max-width: 800px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #e91e63;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #333;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #e91e63;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px;
+        transition: background-color 0.3s;
+    }
+    .btn:hover {
+        background-color: #c2185b;
+    }
+    .explore-section {
+        margin-top: 30px;
+    }
+    .explore-option {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #9c27b0;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px;
+        transition: background-color 0.3s;
+    }
+    .explore-option:hover {
+        background-color: #7b1fa2;
+    }
+    .message {
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .message.active {
+        display: block;
+    }
+</style>
+</head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Buttons and Messages</title>
+  <title>Please please please</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Interactive Buttons</h1>
-    <p>Click the buttons below to explore different messages:</p>
-    <button id="message1" class="btn">Message 1</button>
-    <button id="message2" class="btn">Message 2</button>
-    <button id="message3" class="btn">Message 3</button>
+    <h1>Hi</h1>
+     <button id="button1" class="btn">#000</button>
+    <button id="button2" class="btn">#7b1fa2</button>
+    <button id="button3" class="btn">1.2em</button>
 
-    <div id="messageDisplay" class="message">
-      <!-- Initially empty, will be populated by JavaScript -->
+    <div id="content">
+      <p>This is the initial text.</p>
     </div>
   </div>
 </body>
