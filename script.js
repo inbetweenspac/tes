@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const message1Button = document.getElementById('message1');
-    const message2Button = document.getElementById('message2');
-    const message3Button = document.getElementById('message3');
-    const messageDisplay = document.getElementById('messageDisplay');
+    const message1Button = document.getElementById('button1');
+    const message2Button = document.getElementById('button2');
+    const message3Button = document.getElementById('button3');
   
     // Add event listeners to buttons
     message1Button.addEventListener('click', function() {
