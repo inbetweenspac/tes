@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const message3Button = document.getElementById('button3');
     const messageDisplay = document.getElementById('messageDisplay');
   
-    // Add event listeners to buttons
     message1Button.addEventListener('click', function() {
       showMessage('Message 1 content goes here');
     });
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
    
     function showMessage(message) {
-      messageDisplay.textContent = message;
+      messageDisplay.innerText = message;
       messageDisplay.classList.add('active');
     }
   });
