@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageDisplay = document.getElementById('messagesDisplay');
   
     message1Button.addEventListener('click', function() {
-      showMessage('Message 1 content goes here');
+      showMessage('red sky peak btw');
     });
   
     message2Button.addEventListener('click', function() {
-      showMessage('Message 2 content goes here');
+      showMessage('taylors shit btw');
     });
   
     message3Button.addEventListener('click', function() {
-      showMessage('Message 3 content goes here');
+      showMessage('i seriously have no idea what to do with my future');
     });
   
    
