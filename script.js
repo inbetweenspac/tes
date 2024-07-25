@@ -1,24 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const message1Button = document.getElementById('button1');
-    const message2Button = document.getElementById('button2');
-    const message3Button = document.getElementById('button3');
-    const messageDisplay = document.getElementById('messagesDisplay');
-  
-    message1Button.addEventListener('click', function() {
-      showMessage('red sky peak btw');
-    });
-  
-    message2Button.addEventListener('click', function() {
-      showMessage('taylors shit btw');
-    });
-  
-    message3Button.addEventListener('click', function() {
-      showMessage('i seriously have no idea what to do with my future');
-    });
-  
-   
-    function showMessage(message) {
-      messageDisplay.innerText = message;
-      messageDisplay.classList.add('active');
-    }
-  });
+;(function () {
+  // NOTE: These are more flexible when they are arrays (thus, Array.from())
+  var btnEls = Array.from(document.querySelectorAll('.button'))
+  var msgEls = Array.from(document.querySelectorAll('messagesDisplay'))
+
+  function handleButtonClick(event) {
+    var btnEl = event.target
+    btnEl.disabled = true // optional
+    btnEl.dataset.toggled = 'true' // using the DOM to hold data
+
+    if (btnEls.some(function (el) {
+      return el.dataset.toggled !== 'true'
+    })) return
+
+    msgEls.forEach(function (el) {
+      el.textContent = 'Congratulations you clicked on all of the buttons'
+    })
+  }
+
+  // Our "onclick" equivalent
+  btnEls.forEach(function (el) {
+    el.addEventListener('click', handleButtonClick)
+  })
+})()
